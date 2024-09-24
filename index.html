@@ -26,7 +26,7 @@
             <div class="py-3 px-8">
                 <button id="btn-blog" class="btn bg-greenlizard  rounded-lg text-xl font-semibold">Blog</button>
             </div>
-            <div class="flex items-center gap-1 text-xl font-medium">
+            <div class="lg:flex items-center gap-1 text-xl font-medium hidden">
                 <div>
                     <img src="assets/logo.png" alt="Donation Logo">
                 </div>
@@ -49,14 +49,14 @@
         <section class="lg:px-36 lg:pt-20 flex flex-col p-8" id="main-content">
 
             <!-- Donation and History Buttons -->
-            <div class="flex items-center justify-center gap-2 lg:pb-8">
+            <div class="flex items-center justify-center gap-2 pb-8">
                 <div class="">
                     <button id="btn-donation"
-                        class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control"
+                        class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
                         onclick="toggleViewBasedOnId(this.id)">Donation</button>
                 </div>
                 <div class="">
-                    <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control"
+                    <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
                         onclick="toggleViewBasedOnId(this.id)">History</button>
                 </div>
             </div>
@@ -66,11 +66,11 @@
                 <!-- Cards 1 -->
 
                 <div class="p-8 rounded-2xl border-2">
-                    <div class="flex gap-8 w-full">
-                        <div class="h-full w-1/2">
+                    <div class="flex gap-8 w-full lg:flex-row flex-col">
+                        <div class="h-full lg:w-1/2">
                             <img src="assets/noakhali.png" alt="Noakhali Flood" class="h-full w-full">
                         </div>
-                        <div class="flex flex-col justify-around w-1/2">
+                        <div class="flex flex-col justify-around lg:w-1/2">
                             <div>
                                 <h3 class="bg-gray-200 w-max p-2 rounded-lg"><img src="assets/coin.png" alt="Coin"
                                         class="inline-block"> <span id="balance-noakhali-flood">0</span> BDT</h3>
@@ -95,11 +95,11 @@
 
                 <!-- Card 2 -->
                 <div class="p-8 rounded-2xl border-2">
-                    <div class="flex gap-8 w-full">
-                        <div class="h-full w-1/2">
+                    <div class="flex gap-8 w-full lg:flex-row flex-col">
+                        <div class="h-full lg:w-1/2">
                             <img src="assets/feni.png" alt="Feni Flood" class="h-full w-full">
                         </div>
-                        <div class="flex flex-col justify-around w-1/2">
+                        <div class="flex flex-col justify-around lg:w-1/2">
                             <div>
                                 <h3 class="bg-gray-200 w-max p-2 rounded-lg"><img src="assets/coin.png" alt="Coin"
                                         class="inline-block"> <span id="balance-feni-relief">0</span> BDT</h3>
@@ -124,11 +124,11 @@
 
                 <!-- Card 3 -->
                 <div class="p-8 rounded-2xl border-2">
-                    <div class="flex gap-8 w-full">
-                        <div class="h-full w-1/2">
+                    <div class="flex gap-8 w-full lg:flex-row flex-col">
+                        <div class="h-full lg:w-1/2">
                             <img src="assets/quota-protest.png" alt="quota-protest" class="h-full w-full">
                         </div>
-                        <div class="flex flex-col justify-around w-1/2">
+                        <div class="flex flex-col justify-around lg:w-1/2">
                             <div>
                                 <h3 class="bg-gray-200 w-max p-2 rounded-lg"><img src="assets/coin.png" alt="Coin"
                                         class="inline-block"> <span id="balance-quota-movement">0</span> BDT</h3>
@@ -180,8 +180,6 @@
 
 
             <!-- Notification Modal -->
-            <!-- Open the modal using ID.showModal() method -->
-            <!-- <button class="btn" onclick="notif-modal.showModal()">open modal</button> -->
             <dialog id="notif-modal" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box flex flex-col justify-center items-center">
                     <h3 class="text-lg font-bold">Congrats!</h3>
