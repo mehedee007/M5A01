@@ -37,7 +37,7 @@
                 <div>
                     <img src="assets/coin.png" alt="Coin">
                 </div>
-                <h1><span id="current-balance">5600</span> BDT</h1>
+                <h1 class="text-xl font-medium"><span id="current-balance">2000000</span> BDT</h1>
 
             </div>
         </nav>
@@ -51,10 +51,13 @@
             <!-- Donation and History Buttons -->
             <div class="flex items-center justify-center gap-2 lg:pb-8">
                 <div class="">
-                    <button id="btn-donation" class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control" onclick="toggleViewBasedOnId(this.id)">Donation</button>
+                    <button id="btn-donation"
+                        class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control"
+                        onclick="toggleViewBasedOnId(this.id)">Donation</button>
                 </div>
                 <div class="">
-                    <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control" onclick="toggleViewBasedOnId(this.id)">History</button>
+                    <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control"
+                        onclick="toggleViewBasedOnId(this.id)">History</button>
                 </div>
             </div>
             <!-- Donation Section -->
@@ -83,8 +86,8 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" />
-                            <button class="btn btn-active bg-greenlizard" id="btn-donate-noakhali-flood">Donate
+                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" id="noakhali-donation" />
+                            <button class="btn btn-active bg-greenlizard" id="btn-donate-noakhali-flood" onclick="handleDonationClick(this.id)">Donate
                                 Now</button>
                         </div>
                     </div>
@@ -99,7 +102,7 @@
                         <div class="flex flex-col justify-around w-1/2">
                             <div>
                                 <h3 class="bg-gray-200 w-max p-2 rounded-lg"><img src="assets/coin.png" alt="Coin"
-                                        class="inline-block"> <span id="balance-noakhali-flood">0</span> BDT</h3>
+                                        class="inline-block"> <span id="balance-feni-relief">0</span> BDT</h3>
                             </div>
                             <h3 class="text-xl font-bold">
                                 Donate for Flood Relief in Feni,Bangladesh
@@ -112,8 +115,8 @@
                                 Every contribution counts towards making a real difference. Please consider donating
                                 today to assist those in urgent need.
                             </p>
-                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" />
-                            <button class="btn btn-active bg-greenlizard" id="btn-donate-noakhali-flood">Donate
+                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" id="feni-donation"/>
+                            <button class="btn btn-active bg-greenlizard" id="btn-donate-feni-relief" onclick="handleDonationClick(this.id)">Donate
                                 Now</button>
                         </div>
                     </div>
@@ -128,7 +131,7 @@
                         <div class="flex flex-col justify-around w-1/2">
                             <div>
                                 <h3 class="bg-gray-200 w-max p-2 rounded-lg"><img src="assets/coin.png" alt="Coin"
-                                        class="inline-block"> <span id="balance-noakhali-flood">0</span> BDT</h3>
+                                        class="inline-block"> <span id="balance-quota-movement">0</span> BDT</h3>
                             </div>
                             <h3 class="text-xl font-bold">
                                 Aid for Injured in the Quota Movement
@@ -142,8 +145,8 @@
                                 aiding in their recovery. Please consider making a donation to support these brave
                                 individuals in their time of need.
                             </p>
-                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" />
-                            <button class="btn btn-active bg-greenlizard" id="btn-donate-noakhali-flood">Donate
+                            <input type="text" placeholder="Write Your Donation Here" class="input input-bordered" id="quota-donation"/>
+                            <button class="btn btn-active bg-greenlizard" id="btn-donate-quota-movement" onclick="handleDonationClick(this.id)">Donate
                                 Now</button>
                         </div>
                     </div>
@@ -153,27 +156,50 @@
             <!-- History Section -->
             <article class="flex-col gap-8 hidden" id="history-container">
                 <!-- History content -->
-                <div class="p-8 rounded-2xl border-2 flex flex-col gap-2">
+                <!-- <div class="p-8 rounded-2xl border-2 flex flex-col gap-2">
                     <h3 class="text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                     <p class="text-sm opacity-75">
                         Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
                     </p>
-                </div>     
-                
-                <div class="p-8 rounded-2xl border-2 flex flex-col gap-2">
-                    <h3 class="text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
-                    <p class="text-sm opacity-75">
-                        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-                    </p>
-                </div>    
+                </div>
 
                 <div class="p-8 rounded-2xl border-2 flex flex-col gap-2">
                     <h3 class="text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                     <p class="text-sm opacity-75">
                         Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
                     </p>
-                </div>    
+                </div>
+
+                <div class="p-8 rounded-2xl border-2 flex flex-col gap-2">
+                    <h3 class="text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <p class="text-sm opacity-75">
+                        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+                    </p>
+                </div> -->
             </article>
+
+
+            <!-- Notification Modal -->
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="notif-modal.showModal()">open modal</button> -->
+            <dialog id="notif-modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-bold">Congrats!</h3>
+                    <div>
+                        <img src="assets/coin.png" alt="coin">
+                    </div>
+                    <p class="">You Have Donated for Humankind</p>
+                    <h3 class="text-lg font-bold">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog" class="flex justify-center items-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                             <div class="flex justify-center items-center">
+                                <button class="btn">Close Confirmation</button>
+                             </div>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <footer>
