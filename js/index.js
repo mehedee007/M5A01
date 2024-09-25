@@ -115,7 +115,7 @@ function writeHistory(amount, msg){
 
     divElement.className = 'p-8 rounded-2xl border-2 flex flex-col gap-2';
     h3Element.className ='text-xl font-bold';
-    pElement.className = 'text-sm opacity-75';
+    pElement.className = 'text-sm text-gray-500';
 
     h3Element.textContent = `${amount} Taka is Donated for ${msg}, Bangladesh`;
     pElement.textContent = `Date : ${timeStamp}`;
