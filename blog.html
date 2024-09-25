@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Layout (Lexend) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/86b421e90d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-[lexend]">
+    <header class="bg-[#F9F7F3] sticky top-0 opacity-95">
+        <!-- Navigation Section -->
+        <nav class="flex items-center justify-between lg:px-32 lg:py-6 ">
+            <div class="py-3 px-8">
+                <a id="btn-blog" class="btn bg-greenlizard  rounded-lg text-xl font-semibold" href="index.html">Home</a>
+            </div>
+            <div class="lg:flex items-center gap-1 text-xl font-medium hidden">
+                <div>
+                    <img src="assets/logo.png" alt="Donation Logo">
+                </div>
+                <h1>Donate for Bangladesh</h1>
+            </div>
+
+            <div class="flex items-centers gap-1">
+                <div>
+                    <img src="assets/coin.png" alt="Coin">
+                </div>
+                <h1 class="text-xl font-medium"><span id="current-balance">2000000</span> BDT</h1>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <!-- Main Content -->
+        <section class="lg:px-36 lg:pt-20 flex flex-col p-8 gap-4" id="main-content">
+            <h3 class="font-extrabold text-3xl">Important FAQ <i class="fa-solid fa-question"></i></h3>
+            <article id="questions" class="border-2 rounded-lg p-2 flex flex-col gap-4">
+                <!-- Question 01 -->
+                <div tabindex="0" class="collapse collapse-arrow border">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title text-xl font-medium peer-checked:before:rotate-180">
+                        What is the Document Object Model (DOM)?
+                    </div>
+                    <div class="collapse-content">
+                        <p>The HTML DOM is a standard object model and programming interface for HTML</p>
+                    </div>
+                </div>
+                <!-- Question 02 -->
+                <div tabindex="0" class="collapse collapse-arrow border">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title text-xl font-medium peer-checked:before:rotate-180">
+                        How do you select an element from the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p>TThe getElementById() method of the Document interface returns an Element object representing
+                            the element whose id property matches the specified string</p>
+                    </div>
+                </div>
+
+                <!-- Question 03 -->
+                <div tabindex="0" class="collapse collapse-arrow border">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title text-xl font-medium peer-checked:before:rotate-180">
+                        What is event delegation in the context of the DOM, and why is it useful?
+                    </div>
+                    <div class="collapse-content">
+                        <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+                    </div>
+                </div>
+
+                <!-- Question 04 -->
+                <div tabindex="0" class="collapse collapse-arrow border">
+                    <input type="checkbox" class="peer" />
+                    <div class="collapse-title text-xl font-medium peer-checked:before:rotate-180">
+                        How do you manipulate an element's attributes and styles using the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the <input> element's style when the user clicks inside it. </p>
+                    </div>
+                </div>
+
+                
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        greenlizard: '#B4F461',
+                    },
+                    fontfamily: {
+                        lexend: ['Lexend']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

@@ -86,8 +86,8 @@ function checkDonationValidity(value) {
     let isValid = false;
     if (isNaN(value)) {
         alert("Please Provide a valid number for Donation!");
-    } else if (value <= 0) {
-        alert("Donation Amount can not be less or equal 0!");
+    } else if (value <= 0 || value === "") {
+        alert("Donation Amount can not be empty, and less or equal 0!");
     } else {
         if (updateCurrentBalance(value)) {
             document.getElementById('notif-modal').showModal();
