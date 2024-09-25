@@ -20,9 +20,9 @@
 </head>
 
 <body class="font-[lexend]">
-    <header class="bg-[#F9F7F3] sticky top-0 opacity-95">
+    <header class="sticky top-0 opacity-95 bg-white">
         <!-- Navigation Section -->
-        <nav class="flex items-center justify-between lg:px-32 lg:py-6 ">
+        <nav class="flex items-center justify-between lg:px-32 lg:py-6 bg-[#F9F7F3] lg:mb-10">
             <div class="py-3 px-8">
                 <a id="btn-blog" class="btn bg-greenlizard  rounded-lg text-xl font-semibold" href="blog.html">Blog</a>
             </div>
@@ -41,6 +41,19 @@
 
             </div>
         </nav>
+
+        <div class="flex items-center justify-center gap-2 pb-8">
+            <div class="">
+                <button id="btn-donation"
+                    class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
+                    onclick="toggleViewBasedOnId(this.id)">Donation</button>
+            </div>
+            <div class="">
+                <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
+                    onclick="toggleViewBasedOnId(this.id)">History</button>
+            </div>
+        </div>
+        
     </header>
     <main>
 
@@ -49,7 +62,8 @@
         <section class="lg:px-36 lg:pt-20 flex flex-col p-8" id="main-content">
 
             <!-- Donation and History Buttons -->
-            <div class="flex items-center justify-center gap-2 pb-8">
+             
+            <!-- <div class="flex items-center justify-center gap-2 pb-8 sticky bg-white z-50 top-40 opacity-95">
                 <div class="">
                     <button id="btn-donation"
                         class="btn bg-greenlizard rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
@@ -59,7 +73,8 @@
                     <button id="btn-history" class="btn rounded-lg text-xl border-2 text-center btn-view-control hover:bg-greenlizard"
                         onclick="toggleViewBasedOnId(this.id)">History</button>
                 </div>
-            </div>
+            </div> -->
+
             <!-- Donation Section -->
             <article id="donation-container" class="flex flex-col gap-8">
 
